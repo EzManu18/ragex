@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        label {
+            display: inline-block;
+            width: 80px; /* Imposta una larghezza fissa per le etichette */
+            text-align: right; /* Allinea il testo delle etichette a destra */
+            margin-right: 10px; /* spaziatura tra etichetta e input */
+        }
+    
+        input {
+            display: inline-block;
+            width: 200px; /* larghezza fissa per gli input */
+            padding: 8px;
+            box-sizing: border-box; /* Include il padding nella larghezza totale */
+            margin-bottom: 10px; /* Aggiungi spaziatura tra gli input */
+        }
+        h2{
+            color: red;
+            font-style:oblique;
+        }
+        p{
+            color: firebrick;
+            font-weight: bold;
+        }
+    </style>
+    <h2>Form</h2><br>
+    <form action="">
+        <label for="nome"><b>Nome:</b></label>
+        <input type="text" name="nome" id="nome"><br>
+        <label for="cognome"><b>Cognome:</b></label>
+        <input type="text" name="cognome" id="cognome"><br>
+        <label for="eta"><b>Età:</b></label>
+        <input type="text" name="eta" id="eta"><br>
+        <label for="indirizzo"><b>Indirizzo:</b></label>
+        <input type="text" name="indirizzo" id="indirizzo"><br><br>
+        <input type="button" value="Invia" onClick="Modulo()">
+        <p id="errore"></p>
+    </form>
+    <script src="js.js"></script>
+</body>
+</html>
